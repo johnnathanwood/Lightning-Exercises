@@ -37,6 +37,39 @@ go("forward", "25");
 go("backwards", "90");
 go("forward", "76");
 
+// Given the following set of data about chicken birth rates, you need to filter out the objects where the birth rate value is greater than 15 per 1000 chickens for that year. Store the good years in a new array named `bestYears`.
+
+const birthYears = []
+const birthRates = [
+  { year: 1969, birthRate: 13}, 
+  { year: 1970, birthRate: 16}, 
+  { year: 1971, birthRate: 15}, 
+  { year: 1972, birthRate: 11}, 
+  { year: 1973, birthRate: 18}, 
+  { year: 1974, birthRate: 17}, 
+  { year: 1975, birthRate: 9}
+];
+
+//Type in for and choose the 2nd one to create a four loop
+for (let i = 0; i < birthRates.length; i++) {
+    const currentYears = birthRates[i];
+
+    if (currentYears.birthRate > 15) {
+        bestYears.push(currentYear)
+
+    }
     
+}
+
+console.log(bestYears);
+    
+
+birthRates.forEach(function(currentYear) {
+    if (currentYears.birthRate > 15) {
+        bestYears.push(currentYear)
+    }
+}) 
+
+
 
 
